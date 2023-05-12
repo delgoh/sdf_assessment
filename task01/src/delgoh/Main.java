@@ -1,6 +1,5 @@
 package delgoh;
 
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Main {
@@ -47,18 +46,18 @@ public class Main {
             
             float result = 0;
             if (inputParams[1].equals("+"))
-                result = Float.parseFloat(inputParams[0]) + Float.parseFloat(inputParams[2]);
+                result = num1 + num2;
             else if (inputParams[1].equals("-"))
-                result = Float.parseFloat(inputParams[0]) - Float.parseFloat(inputParams[2]);
+                result = num1 - num2;
             else if (inputParams[1].equals("*"))
-                result = Float.parseFloat(inputParams[0]) * Float.parseFloat(inputParams[2]);
+                result = num1 * num2;
             else if (inputParams[1].equals("/")) {
                 if (Float.parseFloat(inputParams[2]) == 0) {
                     System.out.printf("Error: Divide by 0\n>");
                     userInput = scan.nextLine();
                     continue;
                 }
-                result = Float.parseFloat(inputParams[0]) / Float.parseFloat(inputParams[2]);
+                result = num1 / num2;
             }
 
             saved = result;

@@ -104,7 +104,6 @@ public class Main {
 
     // prints word probability distribution from a given Map input
     public static void printDistribution(Map<String, Map<String, Integer>> wordsCount) {
-
         int countSum;
         float probability;
         String pStr;
@@ -125,7 +124,6 @@ public class Main {
                 System.out.printf(pStr + "\n");
             }
         }
-
     }
 
 }
